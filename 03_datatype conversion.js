@@ -27,3 +27,18 @@ console.log(val2); // NaN
 //undefined -> NaN
 
 
+// parseInt() and parseFloat() functions are used to convert strings to numbers, but they work differently than Number().
+
+let score3 = "100abc";
+
+let val3 = parseInt(score3);
+
+console.log(val3); // 100
+
+let score4 = "33.5abc";
+
+let val4 = parseFloat(score4);
+
+console.log(val4); // 33.5
+
+// parseInt() and parseFloat() will parse the string until they encounter a non-numeric character, while Number() will return NaN if the entire string is not a valid number.           
